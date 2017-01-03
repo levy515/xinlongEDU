@@ -1,0 +1,56 @@
+<include file="Public/head.html" />
+<include file="Public/header-login.html" />
+
+<div class="login-warp">
+    <div class="w">
+        <div class="login-form">
+            <div class="login-tab login-tab-r">
+                <a href="javascript:void(0)" class="checked" style="outline: rgb(109, 109, 109) none 0px;">用户注册</a>
+            </div>
+            <div class="login-box" style="display: block; visibility: visible;">
+                <div class="mt tab-h">
+                </div>
+                <div class="mc">
+                    <div class="form">
+                        <form id="formlogin" method="post" action="userRegister">
+                            <div class="itemlg itemlg-fore1">
+                                <label for="loginname" class="login-label name-label"></label>
+                                <input id="loginname" type="text" class="itxt" name="username" tabindex="1" autocomplete="off" placeholder="请输入登录名">
+                                <span class="clear-btn"></span>
+                            </div>
+                            <div id="entry" class="itemlg itemlg-fore2" style="visibility: visible;">
+                                <label class="login-label pwd-label" for="nloginpwd"></label>
+                                <input type="password" id="nloginpwd" name="password" class="itxt itxt-error" tabindex="2" autocomplete="off" placeholder="请输入密码">
+                                <span class="clear-btn"></span>
+                                <span class="capslock" style="display: none;"><b></b>大小写锁定已打开</span>
+                            </div>
+                            <div class="itemlg itemlg-fore2" style="visibility: visible;">
+                                <label class="login-label pwd-label" for="nloginpwd"></label>
+                                <input type="password" name="phone" class="itxt itxt-error" tabindex="2" autocomplete="off" placeholder="请输入手机号">
+                                <span class="clear-btn"></span>
+                            </div>
+                            <div class="itemlg itemlg-fore2" style="visibility: visible;">
+                                <label class="login-label pwd-label" for="nloginpwd"></label>
+                                <input type="password" name="phonecode" class="itxt itxt-error" tabindex="2" autocomplete="off" placeholder="请输入手机验证码">
+                                <span class="clear-btn"></span>
+                            </div>
+                            <div class="itemlg itemlg-fore5">
+                                <div class="login-btn">
+                                    <input type="submit" class="btn-img btn-entry" value="立即注册">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-banner" style="background-color: #E8C99A">
+            <div class="w">
+                <img src="__IMG__/login_banner.jpg" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="Public/footer.html" />

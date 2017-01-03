@@ -1,0 +1,215 @@
+/********************课程分类********************/
+/*课程分类标题*/
+.allclasstitle {
+    height: 42px;
+    line-height: 42px;
+    font-size: 12px;
+    clear: both;
+}
+.allclasstitle a {
+    font-size: 12px;
+    color: #999;
+}
+.allclasstitle .c3 {
+    color: #333;
+}
+/*课程分类列表*/
+.allclasslist {
+    box-shadow: 0px 0px 2px #e3e3e3;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+}
+.allclasslist .row{
+    padding: 13px;
+    height: 20px;
+    border-bottom: 1px solid #eaeceb;
+}
+.allclasslist .row span{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    margin-right: 15px;
+}
+.allclasslist .row ul{
+    float: left;
+    width: 810px;
+}
+.allclasslist .row ul li.selected{
+    background: #f3505a;
+}
+.allclasslist .row ul li{
+    float: left;
+    height: 20px;
+    line-height: 19px;
+    _line-height: 19px;
+    padding: 0 8px;
+    margin-bottom: 5px;
+}
+.allclasslist .row ul li.selected a{
+    color: #fff;
+}
+.allclasslist .row ul li a{
+    font-size: 12px;
+    color: #666;
+}
+.ls{
+    background-color: #e2e2e2;
+}
+/*课程分类列表统计*/
+.allclassoage{
+    float: right;
+}
+
+/*课程分类商品列表*/
+.allclass_pros{
+    margin-top: 10px;
+    background-color: #fff;
+    border: solid 1px #e3e3e3;
+    border-radius: 2px;
+}
+.allclass_pros .pro-item{
+    clear: both;
+    padding: 35px 20px;
+    width: 100%;
+    border-bottom: solid 1px #eee;
+    position: relative;
+    height: 176px;
+}
+.pro-item-logo{
+    height: 104px;
+    width: 158px;
+    border: solid 1px #eee;
+    float: left;
+    padding: 4px;
+}
+.pro-item-info{
+    width: 480px;
+    float: left;
+    margin-left: 20px;
+}
+.pro-item-title{
+    font-size: 16px;
+    color: #323232;
+}
+.pro-item-basic{
+    margin-top: 14px;
+    height: 20px;
+}
+.pro-item-basic ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pro-item-basic ul li {
+    float: left;
+    margin-left: 24px;
+    position: relative;
+    padding-left: 22px;
+    color: #666;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+.pro-item-consult {
+    margin-top: 30px;
+    color: #999;
+    font-size: 12px;
+}
+a.pro-item-go {
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    right: 50px;
+    bottom: 35px;
+    border: solid 1px #ff663a;
+    color: #ff663a;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/********************教育资讯********************/
+.edu-news{
+
+}
+.edu-news ul{
+    width: 73%;
+    overflow:hidden;
+    padding: 18px 0;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+}
+.edu-news ul li {
+    height: 74px;
+    line-height: 74px;
+}
+.edu-news ul li{
+    float: left;
+    border-right: 1px dashed #ddd;
+    width: 185px;
+}
+.edu-news ul li h2 {
+    font-weight: normal;
+}
+.edu-news ul li a {
+    display: block;
+    width: 125px;
+    padding: 0 30px;
+    height: 100%;
+}
+.edu-news ul li span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.edu-news ul li:nth-child(6n){
+    border-right: none;
+}
+
+.edu-news_img {
+    width: 45px;
+    height: 45px;
+    background: url("../images/category_sprite.png") no-repeat;
+    margin-right: 11px;
+}
+.edu-news_img0 {
+    background-position: 0 0;
+}
+.edu-news_img1 {
+    background-position: 0 -50px;
+}
+.edu-news_img2 {
+    background-position: 0 -100px;
+}
+.edu-news_img3 {
+    background-position: 0 -150px;
+}
+.edu-news_img4 {
+    background-position: 0 -200px;
+}
+.edu-news_img5 {
+    background-position: 0 -250px;
+}
+.edu-news_img6 {
+    background-position: 0 -301px;
+}
+.edu-news_img7 {
+    background-position: 0 -352px;
+}
+.edu-news_img8 {
+    background-position: 0 -403px;
+}
+.edu-news_img9 {
+    background-position: 0 -454px;
+}
+.edu-news_img10 {
+    background-position: 0 -454px;
+}
+.edu-news_img11 {
+    background-position: 0 -454px;
+}
+
