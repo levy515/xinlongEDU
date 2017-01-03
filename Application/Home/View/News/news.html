@@ -200,11 +200,16 @@
 
     </div>
 
-    <div class="page">
-        <ul class="clearfix">
-            <li><a rel="nofollow" class="present" href="javascript:;">1</a></li><li><a rel="nofollow" href="/news/p2/">2</a></li><li><a rel="nofollow" href="/news/p3/">3</a></li><li><a rel="nofollow" href="/news/p4/">4</a></li><li><a rel="nofollow" href="/news/p5/">5</a></li><li><a rel="nofollow" href="/news/p6/">6</a></li><li><a rel="nofollow" href="/news/p7/">7</a></li><li><a rel="nofollow" href="/news/p8/">8</a></li><li><a rel="nofollow" class="next_page" href="/news/p2/" title="下一页">下一页</a></li>
-        </ul>
-    </div>
+    <div class="tcdPageCode"></div>
+    <script>
+        $(".tcdPageCode").createPage({
+            pageCount:100,
+            current:1,
+            backFn:function(p){
+                //console.log(p);
+            }
+        });
+    </script>
 </div>
 
 
