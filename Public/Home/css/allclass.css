@@ -212,4 +212,68 @@ a.pro-item-go {
 .edu-news_img11 {
     background-position: 0 -454px;
 }
+/*教育资讯 资讯列表*/
+.news_lists{
+    margin-top: 20px;
+    padding: 0px 20px;
+    box-shadow: 0px 0px 2px #e3e3e3;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    overflow:hidden;
+}
+.news_lists ul{
+    list-style: outside none none;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+.news_lists li {
+    border-top: none;
+}
+.news_lists li {
+    padding: 20px 0 10px 0;
+}
+.news_lists_body{
+    width: 100%;
+    float: left;
+}
+.news_lists_body h4{
+    height: 35px;
+    font-weight: normal;
+}
+.news_lists_body h4 .picked {
+    background: url("../images/xinwen/labe.gif") no-repeat 0 -2px;
+}
+.news_lists_body h4 i {
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+    background: url("../images/xinwen/news_sprite.png") no-repeat;
+    vertical-align: middle;
+}
+.news_lists_body h4 a {
+    font-size: 18px;
+    color: #0056ab;
+}
+.list_body {
+    height: 70px;
+    font-size: 14px;
+    color: #666;
+    line-height: 23px;
+    overflow: hidden;
+}
+.news_lists_body .f12 {
+    font-size: 12px;
+}
+.news_lists_body .c9 {
+    color: #999;
+}
+.news_lists_body .mt10 {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px #dddddd dashed;
+}
+.news_lists_body span {
+    margin-right: 20px;
+}
 
