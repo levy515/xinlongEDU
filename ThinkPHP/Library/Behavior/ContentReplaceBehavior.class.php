@@ -36,10 +36,14 @@ class ContentReplaceBehavior {
             '__CONTROLLER__'=>  __CONTROLLER__,
             '__URL__'       =>  __CONTROLLER__,
             '__PUBLIC__'    =>  __ROOT__.'/Public',// 站点公共目录
-            '__HOME__'    =>  __ROOT__.'/Public/Home',
+            '__HOME__'    =>  __ROOT__.'/Public/Home', // 前台公共目录
             '__CSS__'    =>  __ROOT__.'/Public/Home/css',
             '__IMG__'    =>  __ROOT__.'/Public/Home/images',
             '__JS__'    =>  __ROOT__.'/Public/Home/js',
+            '__ADMINHOME__'    =>  __ROOT__.'/Public/Admin',  // 后台公共目录
+            '__ADMINCSS__'    =>  __ROOT__.'/Public/Admin/css',
+            '__ADMINIMG__'    =>  __ROOT__.'/Public/Admin/images',
+            '__ADMINJS__'    =>  __ROOT__.'/Public/Admin/js',
 
         );
         // 允许用户自定义模板的字符串替换
