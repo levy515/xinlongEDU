@@ -1540,3 +1540,21 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
 ERR: 无法加载模块:Public
 
+[ 2017-01-04T22:17:03+08:00 ] 127.0.0.1 /Public/Home/images/banner-5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+ERR: 无法加载模块:Public
+
+[ 2017-01-04T22:17:03+08:00 ] 127.0.0.1 /Public/Home/font/Amble-Regular-webfont.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载模块:Public
+
+[ 2017-01-04T22:17:05+08:00 ] 127.0.0.1 /Public/Home/font/Amble-Regular-webfont.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: 无法加载模块:Public
+

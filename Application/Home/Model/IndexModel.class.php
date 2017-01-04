@@ -22,7 +22,7 @@ class IndexModel
 
         $sql = "select * from t_member_user where username='$username' AND password='$password'";
         $list = $Dao->query($sql);
-
+        
         if($list){
             $_SESSION['islogin']=1;           //登陆状态存入session
             $_SESSION['username']=$list['username'];  //把用户名存入session

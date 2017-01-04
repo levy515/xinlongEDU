@@ -8,13 +8,13 @@
 <body>
 <div class="container">
     <section id="content">
-        <form action="">
+        <form id="adminlogin" method="post" action="adminLogin">
             <h1>后台登录</h1>
             <div>
-                <input type="text" placeholder="用户名" required="" id="username" />
+                <input type="text" placeholder="用户名" required="" id="username" name="username" />
             </div>
             <div>
-                <input type="password" placeholder="密码" required="" id="password" />
+                <input type="password" placeholder="密码" required="" id="password" name="password" />
             </div>
             <div class="">
                 <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>

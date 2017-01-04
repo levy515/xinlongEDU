@@ -1893,3 +1893,57 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
 
+[ 2017-01-04T22:17:01+08:00 ] 127.0.0.1 /Home/News/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/liwei/workphp/xinlongEDU/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 非法操作:Home
+
+[ 2017-01-04T22:17:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/liwei/workphp/xinlongEDU/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in /Users/liwei/workphp/xinlongEDU/Application/Home/Controller/IndexController.class.php on line 11 and defined /Users/liwei/workphp/xinlongEDU/ThinkPHP/Library/Think/Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content /Users/liwei/workphp/xinlongEDU/ThinkPHP/Library/Think/Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000483s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2017-01-04T22:17:05+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/liwei/workphp/xinlongEDU/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001588s ]
+
