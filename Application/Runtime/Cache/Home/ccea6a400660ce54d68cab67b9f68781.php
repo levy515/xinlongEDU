@@ -22,6 +22,9 @@
 
     <script type="text/javascript" src="/Public/Home/js/home.js"></script>
 
+    <link href="/Public/Home/css/allclass.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="/Public/Home/js/jquery.page.js"></script>
+
 </head>
 </html>
 
