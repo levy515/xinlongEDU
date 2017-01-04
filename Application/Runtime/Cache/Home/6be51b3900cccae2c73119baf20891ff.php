@@ -121,7 +121,8 @@
         <span class="c3">教育资讯</span>
     </div>
 
-    <div class="news_left l">
+
+    <div class="news_list_left">
         <div class="edu-news">
             <ul>
                 <li>
@@ -326,7 +327,7 @@
         </script>
     </div>
 
-    <div class="news_right r">
+    <div class="news_list_right">
         <div class="news_right_likes">
             <h4 class="news_right_likes_h4">猜你喜欢</h4>
             <ul class="">
@@ -417,12 +418,11 @@
                 </li>
             </ul>
         </div>
-
     </div>
+
 </div>
 
-
- <div class="footer">
+ <!--<div class="footer">
     <div class="wrap">
         <div class="section group">
             <div class="col_1_of_4 span_1_of_4">
@@ -479,3 +479,5 @@
         <p>Copyright &copy; 2017 馨隆教育 版权所有</p>
     </div>
 </div>
+
+-->
