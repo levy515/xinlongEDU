@@ -1,4 +1,4 @@
- /**/
+ /*后台管理头部*/
  body{
      margin: 0 0;
      padding: 0 0;
@@ -44,9 +44,32 @@
  }
  .user-menu-font {
      text-decoration: none;
+     font-size: 16px;
      color: #fff;
      font-family: 'Microsoft YaHei';
  }
-
+ .user-menu-font img{
+     width: 16px;
+     height: 16px;
+     vertical-align:text-bottom;
+ }
+/*后台管理*/
+.admin-main{
+    width: 100%;
+    height: 800px;
+    background-color: green;
+}
+.admin-main-left{
+    width: 250px;
+    height: 500px;
+    background-color: rebeccapurple;
+    float: left;
+}
+.admin-main-right{
+    width: 50%;
+    height: 500px;
+    background-color: #00aeef;
+    float: right;
+}
 
 
