@@ -1,8 +1,8 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
+class AdminController extends Controller {
+    public function admin(){
         $this->display();
     }
 
@@ -14,7 +14,7 @@ class IndexController extends Controller {
             $username = I('post.username'); //获取用户名
             $password = I('post.password'); //获取密码
 
-            $user = new \Admin\Model\IndexModel;
+            $user = new \Admin\Model\AdminModel();
             $user->adminLogin($username,$password);
         }
     }

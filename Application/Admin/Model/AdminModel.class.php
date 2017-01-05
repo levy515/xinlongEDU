@@ -10,7 +10,7 @@ namespace Admin\Model;
 
 use Think\Model;
 
-class IndexModel
+class AdminModel
 {
     //后台登录
     public function adminLogin($username,$password)
