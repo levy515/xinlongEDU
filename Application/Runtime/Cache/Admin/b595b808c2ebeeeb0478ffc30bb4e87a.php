@@ -1,30 +1,18 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>管理系统</title>
-    <link rel="stylesheet" type="text/css" href="/Public/Admin/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/Public/Admin/css/body.css"/>
+    <title>aaa</title>
+    <link href="/Public/Admin/css/admin-style.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body>
-<div class="container">
-    <section id="content">
-        <form id="adminlogin" method="post" action="adminLogin">
-            <h1>后台登录</h1>
-            <div>
-                <input type="text" placeholder="用户名" required="" id="username" name="username" />
-            </div>
-            <div>
-                <input type="password" placeholder="密码" required="" id="password" name="password" />
-            </div>
-            <div class="">
-                <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>
-            </div>
-            <div>
-                <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>
-                <a href="#">忘记密码?</a>
-            </div>
-        </form>
-    </section>
-</div>
+    <div class="admin-warp">
+        <div class="admin-top">
+            <a class="admin-navbar" href="#"><span>XinLongEDU</span>Admin</a>
+            <ul class="user-menu">
+                <li class="user-menu-right">
+                    <a class="user-menu-font" href="#"><span><img src="/Public/Admin/images/admin-login.png"></span> 登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
