@@ -6,12 +6,11 @@
  }
  .admin-warp{
      width: 100%;
-     height: 50px;
-     background-color: #222;
+     height: auto;
  }
  .admin-top{
-     margin-left: 20px;
-     margin-right: 20px;
+     padding-left: 20px;
+     padding-right: 20px;
      height: 50px;
      background-color: #222;
  }
@@ -23,7 +22,6 @@
      font-weight: 500;
      letter-spacing: 2px;
      float: left;
-     height: 50px;
      padding: 15px 15px;
      line-height: 20px;
  }
@@ -56,20 +54,22 @@
 /*后台管理*/
 .admin-main{
     width: 100%;
-    height: 800px;
-    background-color: green;
+    height: auto;
+    overflow: hidden;
+    position: relative;
 }
-.admin-main-left{
+ .admin-main-left{
     width: 250px;
-    height: 500px;
-    background-color: rebeccapurple;
+    height: 100%;
     float: left;
-}
+    position: absolute;
+    top:0;
+    bottom: 0;
+ }
 .admin-main-right{
-    width: 50%;
-    height: 500px;
-    background-color: #00aeef;
-    float: right;
+    width: 100%;
+    height: 100%;
+    padding-left: 250px;
 }
 
 
