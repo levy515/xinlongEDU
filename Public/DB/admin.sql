@@ -20,6 +20,8 @@ CREATE TABLE t_admin_user
 );
 
 INSERT INTO t_admin_user(username, password, name, sex, tel, mail, time) VALUES('admin','admin','管理员',TRUE,'','',TIMESTAMP '2017-01-01 00:00:00');
+INSERT INTO t_admin_user(username, password, name, sex, tel, mail, time) VALUES('test','test','测试员',FALSE ,'','',TIMESTAMP '2017-01-01 00:00:00');
+
 
 
 

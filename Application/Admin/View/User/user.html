@@ -1,10 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>aaaa</h1>
-</body>
-</html>
+<include file="Public/admin-head.html" />
+
+<div class="admin-warp">
+    <include file="Public/admin-top.html" />
+    <div class="admin-main">
+        <include file="Public/admin-menu.html" />
+        <div class="admin-main-right">
+            <div class="admin-pan">
+                <table class="tl" id="alternatecolor">
+                    <tr>
+                        <th>ID</th><th>用户名</th><th>密码</th><th>名称</th><th>性别</th><th>电话</th><th>邮箱</th><th>时间</th><th>操作</th>
+                    </tr>
+                    <foreach name="userlist" item="users">
+                    <tr>
+                        <td>{$users.id}</td>
+                        <td>{$users.username}</td>
+                        <td>{$users.password}</td>
+                        <td>{$users.name}</td>
+                        <td>
+                            <if condition="$users.sex == 1 ">男
+                                <else /> 女
+                            </if>
+                        </td>
+                        <td>{$users.tel}</td>
+                        <td>{$users.mail}</td>
+                        <td>{$users.time}</td>
+                        <td><a href="#">编辑</a>  <a href="javascript:void(0)" id="del" onclick=del({$users.id});>删除</a></td>
+                    </tr>
+                    </foreach>
+                </table>
+
+                <div class="page">
+                    <div class="page-left" name="usercount"><span>总数：{$usercount}</span></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<SCRIPT type=text/javascript>
+    function del(id){
+        if(confirm("你确定要删除吗？")){
+            $.ajax({
+                url: "/Admin/User/userDel",
+                type: "get",
+                data:{"id":id},
+                dataType: "json",
+                success: function(msg){
+                    if(msg == 1)
+                    {
+                        alert("删除成功！");
+                    }else {
+                        alert("删除失败！");
+                    }
+                }
+            });
+        }
+    }
+</SCRIPT>

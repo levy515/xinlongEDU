@@ -54,22 +54,71 @@
 /*后台管理*/
 .admin-main{
     width: 100%;
-    height: auto;
+    height: 100%;
     overflow: hidden;
-    position: relative;
 }
  .admin-main-left{
     width: 250px;
     height: 100%;
     float: left;
-    position: absolute;
     top:0;
     bottom: 0;
  }
 .admin-main-right{
-    width: 100%;
     height: 100%;
     padding-left: 250px;
+}
+
+/*后台管理-用户管理-用户列表*/
+ .admin-pan{
+     margin: 10px;
+ }
+ table.tl {
+     width: 100%;
+     font-family: verdana,arial,sans-serif;
+     font-size:11px;
+     color:#333333;
+     border-width: 1px;
+     border-collapse: collapse;
+ }
+ table.tl th {
+     border-width: 1px;
+     padding: 8px;
+     border-style: solid;
+     border-color: #ccc;
+     background-color: #e3e3e3;
+ }
+ table.tl td {
+     border-width: 1px;
+     padding: 8px;
+     border-style: solid;
+     border-color: #ccc;
+ }
+ .oddrowcolor{
+     /* background-color:#d4e3e5; */
+ }
+ .evenrowcolor{
+     /* background-color:#c3dde0; */
+ }
+
+ /*后台管理-分页*/
+.page{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #CCC;
+    background-color: #e3e3e3;
+}
+.page-left{
+    width: 130px;
+    height: 30px;
+    margin-left: 5px;
+}
+.page-left span{
+    font-family:'Microsoft YaHei';
+    font-size: 14px;
+    color: black;
+    line-height: 30px;
 }
 
 
