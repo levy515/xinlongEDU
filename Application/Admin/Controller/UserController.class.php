@@ -26,4 +26,12 @@ class UserController extends Controller {
         $this->ajaxReturn (json_encode($del),'JSON');
     }
 
+    public function userEdit()
+    {
+        $id = $_POST['id'];
+        //$id = I('post.id');
+        var_dump($id);
+        $this->display();
+    }
+
 }

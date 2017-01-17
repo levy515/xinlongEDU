@@ -24,7 +24,7 @@
                         <td>{$users.tel}</td>
                         <td>{$users.mail}</td>
                         <td>{$users.time}</td>
-                        <td><a href="#" class="fuck">编辑</a>  <a href="javascript:void(0)" id="del" onclick=del({$users.id});>删除</a></td>
+                        <td><a class="edit" modurl="{:U('User/userEdit',array('id'=>$users['id']),'')}" >编辑</a>  <a href="javascript:void(0)" id="del" onclick=del({$users.id});>删除</a></td>
                     </tr>
                     </foreach>
                 </table>
@@ -60,12 +60,15 @@
     }
 
     $(function () {
-        $('.fuck').click(function(){
+        $('.edit').click(function(){
+            var modurl = $(this).attr("modurl");
+            alert(modurl);
             layer.open({
-                type: 1,
-                area: ['600px', '360px'],
+                type: 2,
+                title: '编辑用户',
+                area: ['500px', '500px'],
                 shadeClose: true, //点击遮罩关闭
-                content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+                content: ['/Admin/User/userEdit']
             });
         });
 
