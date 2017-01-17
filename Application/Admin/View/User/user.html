@@ -24,7 +24,7 @@
                         <td>{$users.tel}</td>
                         <td>{$users.mail}</td>
                         <td>{$users.time}</td>
-                        <td><a href="#">编辑</a>  <a href="javascript:void(0)" id="del" onclick=del({$users.id});>删除</a></td>
+                        <td><a href="#" class="fuck">编辑</a>  <a href="javascript:void(0)" id="del" onclick=del({$users.id});>删除</a></td>
                     </tr>
                     </foreach>
                 </table>
@@ -38,6 +38,7 @@
         <div class="clear"></div>
     </div>
 </div>
+
 <SCRIPT type=text/javascript>
     function del(id){
         if(confirm("你确定要删除吗？")){
@@ -57,4 +58,17 @@
             });
         }
     }
+
+    $(function () {
+        $('.fuck').click(function(){
+            layer.open({
+                type: 1,
+                area: ['600px', '360px'],
+                shadeClose: true, //点击遮罩关闭
+                content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+            });
+        });
+
+    });
+
 </SCRIPT>
