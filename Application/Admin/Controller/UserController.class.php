@@ -26,6 +26,7 @@ class UserController extends Controller {
         $this->ajaxReturn (json_encode($del),'JSON');
     }
 
+    //用户列表-编辑
     public function userEdit()
     {
         $id = $_GET['id'];
@@ -33,6 +34,13 @@ class UserController extends Controller {
         $this->assign("userlist",$editList);
         $this->userlist=$editList;
         $this->display();
+    }
+
+    //用户列表-编辑（保存）
+    public function onUserEdit($id,$username)
+    {
+        var_dump($id);
+        $this->ajaxReturn(json_encode(0),'json');
     }
 
 }
