@@ -28,9 +28,10 @@ class UserController extends Controller {
 
     public function userEdit()
     {
-        $id = $_POST['id'];
-        //$id = I('post.id');
-        var_dump($id);
+        $id = $_GET['id'];
+        $editList = UserModel::userEdit($id);
+        $this->assign("userlist",$editList);
+        $this->userlist=$editList;
         $this->display();
     }
 

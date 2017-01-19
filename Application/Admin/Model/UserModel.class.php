@@ -14,6 +14,7 @@ use Think\Model;
 class UserModel
 {
     private static $table = 't_admin_user';
+
     //用户列表
     public function userList()
     {
@@ -37,6 +38,14 @@ class UserModel
         $sql = "delete from " . self::$table . " where id = ".$id;
         $Dao->query($sql);
         return 1;
+    }
+
+    //用户列表编辑
+    public function userEdit($id)
+    {
+        $Dao = new Model();
+        $sql = "select * from " . self::$table . " where id = ".$id;
+        return $Dao->query($sql);
     }
 }
 
