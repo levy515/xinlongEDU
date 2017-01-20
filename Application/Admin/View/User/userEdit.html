@@ -41,7 +41,7 @@
                     </tr>
                 </table>
                 <div class="btn">
-                    <a href="#" class="btn-ok" onclick=aaa({$users.id},{$users.username});>确&nbsp;认</a>
+                    <a class="btn-ok">确&nbsp;认</a>
                     <a href="javascript:history.go(-1);" class="btn-no">取&nbsp;消</a>
                 </div>
                 </foreach>
@@ -51,42 +51,24 @@
     </div>
 </div>
 <script type="text/javascript">
-//$(function () {
-//    $('.btn-ok').click(function () {
-//        var id=$('input[name="id"]').val();
-//        var $username=$('input[name="username"]').val();
-//        var $password=$('input[name="password"]').val();
-//        var $name=$('input[name="name"]').val();
-//        var $sex = $('input[name=sex]:checked').val();
-//        var $tel=$('input[name="tel"]').val();
-//        var $mail=$('input[name="mail"]').val();
-//
-//        var url = "{:U('User/onUserEdit','','')}";
-//        $.post(
-//            url,{"id":id},
-//                function (msg) {
-//                    if(msg == 0){
-//                        alert("ok");
-//                    }else {
-//                        alert("no");
-//                    }
-//        },"json");
-//    });
-//});
-function aaa(id,username){
-    $.ajax({
-        url: "/Admin/User/onUserEdit",
-        type: "get",
-        data:{"id":id,"username":username},
-        dataType: "json",
-        success: function(msg){
-            if(msg == 1)
-            {
-                alert("ok！");
-            }else {
-                alert("no！");
+$(function () {
+    $('.btn-ok').click(function () {
+        var id=$('input[name="id"]').val();
+        var username=$('input[name="username"]').val();
+        var password=$('input[name="password"]').val();
+        var name=$('input[name="name"]').val();
+        var sex = $('input[name=sex]:checked').val();
+        var tel=$('input[name="tel"]').val();
+        var mail=$('input[name="mail"]').val();
+
+        $.get('__URL__/onUserEdit',{'id':id,'username':username,'password':password,'name':name,'sex':sex,'tel':tel,'mail':mail},function(msg){
+            if(msg == 1){
+                alert("编辑成功！");
+            }else{
+                alert("编辑失败！");
             }
-        }
+        },'json');
+
     });
-}
+});
 </script>

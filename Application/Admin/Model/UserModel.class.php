@@ -47,6 +47,15 @@ class UserModel
         $sql = "select * from " . self::$table . " where id = ".$id;
         return $Dao->query($sql);
     }
+
+    //用户列表编辑保存
+    public function onUserEdit($id,$username,$password,$name,$sex,$tel,$mail)
+    {
+        $Dao = new Model();
+        $sql = "update " . self::$table . " set username = "."'".$username."'".",password = "."'".$password."'".",name = "."'".$name."'".",sex = "."'".$sex."'".",tel = "."'".$tel."'".",mail = "."'".$mail."'"." where id = ".$id;
+        $Dao->query($sql);
+        return 1;
+    }
 }
 
 

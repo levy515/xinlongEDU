@@ -37,10 +37,18 @@ class UserController extends Controller {
     }
 
     //用户列表-编辑（保存）
-    public function onUserEdit($id,$username)
+    public function onUserEdit()
     {
-        var_dump($id);
-        $this->ajaxReturn(json_encode(0),'json');
+        $id = $_GET['id'];
+        $username = $_GET['username'];
+        $password = $_GET['password'];
+        $name = $_GET['name'];
+        $sex = $_GET['sex'];
+        $tel = $_GET['tel'];
+        $mail = $_GET['mail'];
+
+        $onUserEdit = UserModel::onUserEdit($id,$username,$password,$name,$sex,$tel,$mail);
+        $this->ajaxReturn(json_encode($onUserEdit),'json');
     }
 
 }
