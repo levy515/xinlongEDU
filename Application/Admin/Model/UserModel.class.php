@@ -31,6 +31,15 @@ class UserModel
         return $Dao->query($sql);
     }
 
+    //用户列表增加保存
+    public function onUserAdd($username,$password,$name,$sex,$tel,$mail)
+    {
+        $Dao = new Model();
+        $sql = "insert into " . self::$table . " set username = "."'".$username."'".",password = "."'".$password."'".",name = "."'".$name."'".",sex = "."'".$sex."'".",tel = "."'".$tel."'".",mail = "."'".$mail."'"." where id = ".$id;
+        $Dao->query($sql);
+        return 1;
+    }
+
     //用户列表删除
     public function userDel($id)
     {

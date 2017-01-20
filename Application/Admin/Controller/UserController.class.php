@@ -19,6 +19,26 @@ class UserController extends Controller {
         $this->display();
     }
 
+    //用户列表-增加
+    public function userAdd()
+    {
+        $this->display();
+    }
+
+    //用户列表-增加（保存）
+    public function onUserAdd()
+    {
+        $username = $_GET['username'];
+        $password = $_GET['password'];
+        $name = $_GET['name'];
+        $sex = $_GET['sex'];
+        $tel = $_GET['tel'];
+        $mail = $_GET['mail'];
+
+        $onUserEdit = UserModel::onUserAdd($username,$password,$name,$sex,$tel,$mail);
+        $this->ajaxReturn(json_encode($onUserEdit),'json');
+    }
+
     //用户列表-删除
     public function userDel($id)
     {
