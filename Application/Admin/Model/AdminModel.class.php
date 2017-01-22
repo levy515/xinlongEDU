@@ -30,7 +30,7 @@ class AdminModel
 
             echo "<script>alert('成功!');</script>";
 
-            echo "<script>location.href='index';</script>";
+            echo "<script>location.href='admin';</script>";
 
         }else{
             echo "<script>alert('用户名或密码错误!');</script>";
