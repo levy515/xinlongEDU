@@ -13,10 +13,20 @@ a{text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());}
 .ce li .dqian{background:none}
 .ce li .admin-home{background:url(../images/admin.png) no-repeat 10px center ;}
 .ce li .admin-user{background:url(../images/admin-user.png) no-repeat 10px center;}
+.ce li .admin-data{background:url(../images/admin-data.png) no-repeat 10px center;}
+.ce li .admin-edu{background:url(../images/admin-edu.png) no-repeat 10px center;}
+.ce li .admin-order{background:url(../images/admin-order.png) no-repeat 10px center;}
+.ce li .admin-product{background:url(../images/admin-product.png) no-repeat 10px center;}
+.ce li .admin-system{background:url(../images/admin-system.png) no-repeat 10px center;}
 
+/*menu-hover*/
 .ce li .admin-home:hover{background:url(../images/admin.png) no-repeat 10px center rgb(220,31,31);}
 .ce li .admin-user:hover{background:url(../images/admin-user.png) no-repeat 10px center rgb(220,31,31);}
-
+.ce li .admin-data:hover{background:url(../images/admin-data.png) no-repeat 10px center rgb(220,31,31);}
+.ce li .admin-edu:hover{background:url(../images/admin-edu.png) no-repeat 10px center rgb(220,31,31);}
+.ce li .admin-order:hover{background:url(../images/admin-order.png) no-repeat 10px center rgb(220,31,31);}
+.ce li .admin-product:hover{background:url(../images/admin-product.png) no-repeat 10px center rgb(220,31,31);}
+.ce li .admin-system:hover{background:url(../images/admin-system.png) no-repeat 10px center rgb(220,31,31);}
 
 .er{display:none;width:250px;background:rgb(100,100,100);}
 .er li{width:100%;border:solid rgb(140,140,140);border-width:1px 0px 0px;}

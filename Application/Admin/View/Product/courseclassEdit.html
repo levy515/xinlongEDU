@@ -1,0 +1,57 @@
+<include file="Public/admin-head.html" />
+
+<div class="admin-warp">
+    <include file="Public/admin-top.html" />
+    <div class="admin-main">
+        <include file="Public/admin-menu.html" />
+        <div class="admin-main-right">
+            <div class="admin-main-right-top">
+                <ol><li>商品管理 >> 课程分类 >> 编辑</li></ol>
+            </div>
+            <div class="admin-pan">
+                <foreach name="courseClassList" item="courses">
+                <table class="tl">
+                    <tr>
+                        <td class="tld">ID：</td><td><input type="text" name="id" value="{$courses.id}" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td class="tld">名称：</td><td><input type="text" name="name" value="{$courses.name}" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tld">阶段：</td><td><input type="text" name="phase" value="{$courses.phase}" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tld">层数：</td><td><input type="text" name="level" value="{$courses.level}" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td class="tld">排序：</td><td><input type="text" name="sort" value="{$courses.sort}" readonly /></td>
+                    </tr>
+                </table>
+                <div class="btn">
+                    <a class="btn-ok">确&nbsp;认</a>
+                    <a href="javascript:history.go(-1);" class="btn-no">取&nbsp;消</a>
+                </div>
+                </foreach>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(function () {
+    $('.btn-ok').click(function () {
+        var id=$('input[name="id"]').val();
+        var name=$('input[name="name"]').val();
+        var phase=$('input[name="phase"]').val();
+
+        $.get('__URL__/onCourseClassEdit',{'id':id,'name':name,'phase':phase},function(msg){
+            if(msg == 1){
+                alert("编辑成功！");
+            }else{
+                alert("编辑失败！");
+            }
+        },'json');
+
+    });
+});
+</script>

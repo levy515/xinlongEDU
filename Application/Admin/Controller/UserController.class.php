@@ -6,8 +6,8 @@ use Think\Controller;
 class UserController extends Controller {
 
     //用户管理-用户列表
-    public function user(){
-
+    public function user()
+    {
         $list = UserModel::userList();
         $this->assign("userlist",$list);
         $this->userlist=$list;

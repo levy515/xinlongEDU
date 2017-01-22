@@ -1,0 +1,56 @@
+<include file="Public/admin-head.html" />
+
+<div class="admin-warp">
+    <include file="Public/admin-top.html" />
+    <div class="admin-main">
+        <include file="Public/admin-menu.html" />
+        <div class="admin-main-right">
+            <div class="admin-main-right-top">
+                <ol>
+                    <li>商品管理 >> 课程分类<a href="{:U('Admin/User/userAdd')}" style="float:right;color: #B81D22;">增加</a></li>
+                </ol>
+            </div>
+            <div class="admin-pan">
+                <table class="tl">
+                    <tr>
+                        <th>ID</th><th>名称</th><th>阶段</th><th>层数</th><th>排序</th><th>时间</th><th>操作</th>
+                    </tr>
+                    <foreach name="courseClassList" item="courses">
+                        <tr>
+                            <td>{$courses.id}</td>
+                            <td>{$courses.name}</td>
+                            <td>{$courses.phase}</td>
+                            <td>{$courses.level}</td>
+                            <td>{$courses.sort}</td>
+                            <td>{$courses.time}</td>
+                            <td><a class="edit" href="{:U('Product/CourseClassEdit',array('id'=>$courses['id']),'')}" >编辑</a>  <a href="javascript:void(0)" id="del" onclick=del({$courses.id});>删除</a></td>
+                        </tr>
+                    </foreach>
+                </table>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<SCRIPT type=text/javascript>
+    function del(id){
+        if(confirm("你确定要删除吗？")){
+            $.ajax({
+                url: "/Admin/Product/CourseClassDel",
+                type: "get",
+                data:{"id":id},
+                dataType: "json",
+                success: function(msg){
+                    if(msg == 1)
+                    {
+                        alert("删除成功！");
+                    }else {
+                        alert("删除失败！");
+                    }
+                }
+            });
+        }
+    }
+</SCRIPT>
+
