@@ -45,7 +45,6 @@
 <script type="text/javascript">
 $(function () {
     $('.btn-ok').click(function () {
-        var id=$('input[name="id"]').val();
         var username=$('input[name="username"]').val();
         var password=$('input[name="password"]').val();
         var name=$('input[name="name"]').val();
@@ -53,7 +52,7 @@ $(function () {
         var tel=$('input[name="tel"]').val();
         var mail=$('input[name="mail"]').val();
 
-        $.get('__URL__/onUserEdit',{'id':id,'username':username,'password':password,'name':name,'sex':sex,'tel':tel,'mail':mail},function(msg){
+        $.get('__URL__/onUserAdd',{'username':username,'password':password,'name':name,'sex':sex,'tel':tel,'mail':mail},function(msg){
             if(msg == 1){
                 alert("编辑成功！");
             }else{

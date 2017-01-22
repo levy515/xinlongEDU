@@ -35,7 +35,15 @@ class UserModel
     public function onUserAdd($username,$password,$name,$sex,$tel,$mail)
     {
         $Dao = new Model();
-        $sql = "insert into " . self::$table . " set username = "."'".$username."'".",password = "."'".$password."'".",name = "."'".$name."'".",sex = "."'".$sex."'".",tel = "."'".$tel."'".",mail = "."'".$mail."'"." where id = ".$id;
+        if($sex == 1)
+        {
+            $sex = true;
+        }elseif ($sex == 0){
+            $sex = false;
+        }
+        
+        $sql = "INSERT INTO " . self::$table . "(username, password, name, sex, tel, mail)
+				VALUES('$username','$password','$name','$sex','$tel','$mail')";
         $Dao->query($sql);
         return 1;
     }
