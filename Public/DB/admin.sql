@@ -41,10 +41,79 @@ CREATE TABLE t_course_class
 	PRIMARY KEY (id)
 );
 
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-一级分类
+-- -----------------------------------------------------------------------
 INSERT INTO t_course_class(name, phase, level, sort,time) VALUES('婴儿期','0~1岁',1,1000,TIMESTAMP '2017-01-22 00:00:00');
-INSERT INTO t_course_class(name, phase, level,time) VALUES('测试','111',1,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(name, phase, level, sort,time) VALUES('幼儿期','1~3岁',1,1000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(name, phase, level, sort,time) VALUES('学龄前期','3~6岁',1,1000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(name, phase, level, sort,time) VALUES('小学','6~12岁',1,1000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(name, phase, level, sort,time) VALUES('初中','13~15岁',1,1000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(name, phase, level, sort,time) VALUES('高中','16~18岁',1,1000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(name, phase, level, sort,time) VALUES('VIP学习中心','',1,1000,TIMESTAMP '2017-01-22 00:00:00');
 
-
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-二级分类-婴儿期
+-- -----------------------------------------------------------------------
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(1,'成长','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(1,'语言','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(1,'表情','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(1,'声音','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(1,'图像','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(1,'动作','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(1,'食物','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-二级分类-幼儿期
+-- -----------------------------------------------------------------------
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(3,'语言','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(3,'动作','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(3,'礼仪','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(3,'表情','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(3,'声音','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(3,'图像','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(3,'食物','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-二级分类-学龄前期
+-- -----------------------------------------------------------------------
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'语言','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'手工','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'动作','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'礼仪','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'表情','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'声音','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'图像','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(4,'食物','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-二级分类-小学
+-- -----------------------------------------------------------------------
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(5,'课程','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(5,'手工','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(5,'运动','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(5,'礼仪','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(5,'声音','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(5,'影像','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-二级分类-初中
+-- -----------------------------------------------------------------------
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(6,'课程','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(6,'手工','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(6,'运动','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(6,'礼仪','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(6,'声音','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(6,'影像','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-二级分类-高中
+-- -----------------------------------------------------------------------
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(7,'课程','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(7,'手工','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(7,'运动','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(7,'礼仪','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(7,'声音','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(7,'影像','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
+-- -----------------------------------------------------------------------
+-- Table t_course_class				商品管理-课程分类-二级分类-VIP学习中心
+-- -----------------------------------------------------------------------
+INSERT INTO t_course_class(fid, name, phase, level, sort,time) VALUES(8,'学习中心','',2,2000,TIMESTAMP '2017-01-22 00:00:00');
 
 
 
