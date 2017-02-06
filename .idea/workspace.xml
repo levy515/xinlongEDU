@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="976d0477-58b1-454c-ba69-3027dd5c9f3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/css/products.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Products/products.html" afterPath="$PROJECT_DIR$/Application/Home/View/Products/products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Allclass/allclass.html" afterPath="$PROJECT_DIR$/Application/Home/View/Allclass/allclass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5f5878b563bbd0551b6c84d71156b7e9.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5f5878b563bbd0551b6c84d71156b7e9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/head.html" afterPath="$PROJECT_DIR$/Public/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ccea6a400660ce54d68cab67b9f68781.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ccea6a400660ce54d68cab67b9f68781.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/e2f1e8739761dd1b07196da7c9136d50.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/e2f1e8739761dd1b07196da7c9136d50.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/header.html" afterPath="$PROJECT_DIR$/Public/header.html" />
     </list>
     <ignored path="thinkphp3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,34 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="products.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/Products/products.html">
+      <file leaf-file-name="allclass.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Allclass/allclass.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Public/Home/css/products.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="101" column="18" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="18" />
+            <state relative-caret-position="595">
+              <caret line="194" column="42" selection-start-line="194" selection-start-column="42" selection-end-line="194" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/head.html">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Public/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="496">
+              <caret line="60" column="67" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -86,7 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Model/IndexModel.class.php" />
         <option value="$PROJECT_DIR$/Public/Home/css/w1210.css" />
         <option value="$PROJECT_DIR$/Public/Home/js/class-js.js" />
@@ -97,9 +85,7 @@
         <option value="$PROJECT_DIR$/Public/Home/css/brands.css" />
         <option value="$PROJECT_DIR$/Public/Home/css/style.css" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/AllclassController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Allclass/allclass.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/News/news.html" />
-        <option value="$PROJECT_DIR$/Public/Home/css/allclass.css" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/IndexController.class.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
@@ -129,7 +115,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php" />
         <option value="$PROJECT_DIR$/Public/DB/admin.sql" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Product/courseclass.html" />
-        <option value="$PROJECT_DIR$/Public/header.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Products/product.html" />
         <option value="$PROJECT_DIR$/Application/Home/Model/ProductsModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/ProductsController.class.php" />
@@ -137,6 +122,10 @@
         <option value="$PROJECT_DIR$/Public/head.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Products/products.html" />
         <option value="$PROJECT_DIR$/Public/Home/css/products.css" />
+        <option value="$PROJECT_DIR$/Public/header-login.html" />
+        <option value="$PROJECT_DIR$/Public/Home/css/allclass.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Allclass/allclass.html" />
+        <option value="$PROJECT_DIR$/Public/header.html" />
       </list>
     </option>
   </component>
@@ -240,28 +229,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thinkphp3.2.3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thinkphp3.2.3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -337,6 +304,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinkphp3.2.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinkphp3.2.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Allclass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -902,7 +895,7 @@
       <workItem from="1484787661193" duration="16150000" />
       <workItem from="1484872381333" duration="15848000" />
       <workItem from="1485043324362" duration="16721000" />
-      <workItem from="1486342396297" duration="18223000" />
+      <workItem from="1486342396297" duration="20974000" />
     </task>
     <task id="LOCAL-00001" summary="xinlong">
       <created>1483408745970</created>
@@ -1114,11 +1107,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486349395625</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="201702061608 product">
+      <created>1486368536985</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1486368536985</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282198000" />
+    <option name="totallyTimeSpent" value="284949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1058" extended-state="0" />
@@ -1174,7 +1174,8 @@
     <MESSAGE value="201701220913" />
     <MESSAGE value="201701221524 分类" />
     <MESSAGE value="201702060946 分类" />
-    <option name="LAST_COMMIT_MESSAGE" value="201702060946 分类" />
+    <MESSAGE value="201702061608 product" />
+    <option name="LAST_COMMIT_MESSAGE" value="201702061608 product" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1187,20 +1188,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Conf/debug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Dispatcher.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1272,13 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/admin-top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1439,14 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Allclass/allclass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/admin-menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1475,14 +1447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="59" column="57" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1568,6 +1532,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Home/css/products.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Products/products.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1579,10 +1551,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Home/css/products.css">
+    <entry file="file://$PROJECT_DIR$/Public/admin-top.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="18" />
+        <state relative-caret-position="68">
+          <caret line="4" column="69" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/header-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Home/css/allclass.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Allclass/allclass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="194" column="42" selection-start-line="194" selection-start-column="42" selection-end-line="194" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="60" column="67" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
           <folding />
         </state>
       </provider>

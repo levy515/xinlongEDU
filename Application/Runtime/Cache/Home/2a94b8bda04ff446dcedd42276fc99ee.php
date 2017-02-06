@@ -23,6 +23,7 @@
     <script type="text/javascript" src="/Public/Home/js/home.js"></script>
 
     <link href="/Public/Home/css/allclass.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/Public/Home/css/products.css" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="/Public/Home/js/jquery.page.js"></script>
 
 </head>
@@ -44,8 +45,8 @@
             </div>
             <div class="account_desc">
                 <ul>
-                    <li><a href="Home/Index/register">注册</a></li>
-                    <li><a href="Home/Index/login">登录</a></li>
+                    <li><a href="<?php echo U('Home/Index/register');?>">注册</a></li>
+                    <li><a href="<?php echo U('Home/Index/login');?>">登录</a></li>
                     <li><a href="#">收藏</a></li>
                     <li><a href="#">会员中心</a></li>
                 </ul>
@@ -54,7 +55,7 @@
         </div>
         <div class="header_top">
             <div class="logo">
-                <a href="index.html"><img src="/Public/Home/images/logo.png" alt="" /></a>
+                <a href="<?php echo U('Home/Index/Index');?>"><img src="/Public/Home/images/logo.png" alt="" /></a>
             </div>
             <div class="cart">
                 <p>购物车：<div id="dd" class="wrapper-dropdown-2"> 0
@@ -256,55 +257,55 @@
             </div>
             <div class="section group">
                 <div class="grid_1_of_4 images_1_of_4">
-                    <a href="preview.html"><img src="/Public/Home/images/feature-pic1.jpg" alt="" /></a>
+                    <a href="<?php echo U('Home/Products/Products');?>"><img src="/Public/Home/images/feature-pic1.jpg" alt="" /></a>
                     <h2>Lorem Ipsum is simply </h2>
                     <div class="price-details">
                         <div class="price-number">
-                            <p><span class="rupees">早教课程</span></p>
+                            <p><span class="rupees">精选课程一</span></p>
                         </div>
                         <div class="add-cart">
-                            <h4><a href="preview.html">查看</a></h4>
+                            <h4><a href="<?php echo U('Home/Products/Products');?>">查看</a></h4>
                         </div>
                         <div class="clear"></div>
                     </div>
 
                 </div>
                 <div class="grid_1_of_4 images_1_of_4">
-                    <a href="preview.html"><img src="/Public/Home/images/feature-pic2.jpg" alt="" /></a>
+                    <a href="<?php echo U('Home/Products/Products');?>"><img src="/Public/Home/images/feature-pic2.jpg" alt="" /></a>
                     <h2>Lorem Ipsum is simply </h2>
                     <div class="price-details">
                         <div class="price-number">
-                            <p><span class="rupees">早教课程</span></p>
+                            <p><span class="rupees">精选课程二</span></p>
                         </div>
                         <div class="add-cart">
-                            <h4><a href="preview.html">Add to Cart</a></h4>
+                            <h4><a href="<?php echo U('Home/Products/Products');?>">查看</a></h4>
                         </div>
                         <div class="clear"></div>
                     </div>
 
                 </div>
                 <div class="grid_1_of_4 images_1_of_4">
-                    <a href="preview.html"><img src="/Public/Home/images/feature-pic3.jpg" alt="" /></a>
+                    <a href="<?php echo U('Home/Products/Products');?>"><img src="/Public/Home/images/feature-pic3.jpg" alt="" /></a>
                     <h2>Lorem Ipsum is simply </h2>
                     <div class="price-details">
                         <div class="price-number">
-                            <p><span class="rupees">早教课程</span></p>
+                            <p><span class="rupees">精选课程三</span></p>
                         </div>
                         <div class="add-cart">
-                            <h4><a href="preview.html">Add to Cart</a></h4>
+                            <h4><a href="<?php echo U('Home/Products/Products');?>">查看</a></h4>
                         </div>
                         <div class="clear"></div>
                     </div>
                 </div>
                 <div class="grid_1_of_4 images_1_of_4">
-                    <a href="preview.html"><img src="/Public/Home/images/feature-pic4.jpg" alt="" /></a>
+                    <a href="<?php echo U('Home/Products/Products');?>"><img src="/Public/Home/images/feature-pic4.jpg" alt="" /></a>
                     <h2>Lorem Ipsum is simply </h2>
                     <div class="price-details">
                         <div class="price-number">
-                            <p><span class="rupees">早教课程</span></p>
+                            <p><span class="rupees">精选课程四</span></p>
                         </div>
                         <div class="add-cart">
-                            <h4><a href="preview.html">Add to Cart</a></h4>
+                            <h4><a href="<?php echo U('Home/Products/Products');?>">查看</a></h4>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -315,7 +316,7 @@
                 <i class="left-line"></i>
                 <span>课程分类</span>
                 <div class="see">
-                    <p><a href="#">更多分类</a></p>
+                    <p><a href="<?php echo U('Home/Allclass/Allclass');?>">更多分类</a></p>
                 </div>
             </div>
             <div class="class-area">
@@ -643,22 +644,22 @@
                         <li>
                             <i></i>
                             <h5>行业权威平台</h5>
-                            <span>教育部门批准，国内领先的一站式<br>教育培训资源整合平台</span>
+                            <!-- <span>教育部门批准，国内领先的一站式<br>教育培训资源整合平台</span> -->
                         </li>
                         <li>
                             <i></i>
                             <h5>教育资源丰富</h5>
-                            <span>覆盖全国上百个城市30000多家优质机构<br>优质教育品牌，老师好，学校多，课程全</span>
+                            <!-- <span>覆盖全国上百个城市30000多家优质机构<br>优质教育品牌，老师好，学校多，课程全</span> -->
                         </li>
                         <li>
                             <i></i>
                             <h5>机构真实认证</h5>
-                            <span>合作机构100%人工真实性审核<br>机构缴纳保证金，学员学习有保障</span>
+                            <!-- <span>合作机构100%人工真实性审核<br>机构缴纳保证金，学员学习有保障</span> -->
                         </li>
                         <li>
                             <i></i>
                             <h5>保证数据真实</h5>
-                            <span>累计数十万条真实用户点评信息和成交数据<br>透明化展现帮您实实在在选出好机构</span>
+                            <!-- <span>累计数十万条真实用户点评信息和成交数据<br>透明化展现帮您实实在在选出好机构</span> -->
                         </li>
                     </ul>
                 </div>
