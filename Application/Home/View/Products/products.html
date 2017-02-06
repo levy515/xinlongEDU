@@ -1,1 +1,109 @@
-<h1>products</h1>
+<include file="Public/head.html" />
+<include file="Public/header.html" />
+
+<div class="wrap">
+    <div class="goods">
+        <div class="pathbox">
+            <div class="path">
+                <a href="/">首页</a>　&gt;　<a href="#" title="商品">商品</a>
+            </div>
+        </div>
+        <div class="info clearfix">
+            <div class="left">
+                <a href="#" target="_blank"><img src="__IMG__/productslide-1.jpg" alt=" " /></a>
+            </div>
+            <div class="right">
+                <div class="caption">
+                    <h1><a href="?a=goods&amp;id=200510" title="羿科 Aegle 耐高温手套（350度） HAT350">羿科 Aegle 耐高温手套（350度） HAT350</a></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="row">
+                    <span class="key">商品编号：</span>
+                    <span class="val">200510</span>
+                </div>
+                <div class="row">
+                    <span class="key">品　　牌：</span>
+                    <span class="val">羿科 Aegle</span>
+                </div><br/>
+                <div class="alcaption"></div>
+                <div class="row">
+                    <span class="key">选择型号：</span>
+                    <span class="val models"><a href="?a=goods&amp;id=200510&amp;mid=210587" class="act">HAT350</a></span>
+                </div>
+            </div>
+        </div>
+        <table class="goods-items">
+            <tbody>
+                <tr>
+                    <th>供应商</th>
+                    <th>型号 / 规格</th>
+                    <th>单位（包装规格）</th>
+                    <th>价格</th>
+                    <th>货期</th>
+                    <th>保修期</th>
+                    <th>联系</th>
+                    <th>数量</th>
+                    <th>加入购物车</th>
+                </tr>
+                <tr>
+                    <td class="col-member"><a href="javascript:;">V1001</a></td>
+                    <td class="col-model">HAT350 </td>
+                    <td class="col-unit">1个</td>
+                    <td class="col-price">￥111.2400</td>
+                    <td class="col-delivery">3天</td>
+                    <td class="col-warranty"></td>
+                    <td class="col-qq"></td>
+                    <td class="col-number">
+                    <div class="col-number-box">
+                        <a href="javascript:;" class="buy-dec">-</a>
+                        <input autocomplete="off" type="text" class="buy-num" id="buy210587" value="1">
+                        <a href="javascript:;" class="buy-inc">+</a>
+                    </div>
+                    </td>
+                    <td class="col-buycart"><a href="javascript:void(0);" class="buy-cart" sid="210587">加入购物车</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            window.onload = function(){
+                tab("tab_t","li","tab_c","div","onmouseover")
+                function tab(tab_t,tab_t_tag,tab_c,tag_c_tag,evt){
+                    var tab_t = document.getElementById(tab_t);
+                    var tab_t_li = tab_t.getElementsByTagName(tab_t_tag);
+                    var tab_c = document.getElementById(tab_c);
+                    var tab_c_li = tab_c.getElementsByTagName(tag_c_tag);
+                    var len = tab_t_li.length;
+                    var i=0;
+                    for(i=0; i<len; i++){
+                        tab_t_li[i].index = i;
+                        tab_t_li[i][evt] = function(){
+                            for(i=0; i<len; i++){
+                                tab_t_li[i].className = '';
+                                tab_c_li[i].className = 'hide';
+                            }
+                            tab_t_li[this.index].className = 'act';
+                            tab_c_li[this.index].className = '';
+                        }
+                    }
+                }
+            }
+        </script>
+        <div class="goods-tab">
+            <ul id="tab_t">
+                <li class="act">商品介绍</li>
+                <li>规格参数</li>
+                <li>包装清单</li>
+                <li>其他</li>
+            </ul>
+            <div id="tab_c">
+                <div>内容1</div>
+                <div class="hide">内容2</div>
+                <div class="hide">内容3</div>
+                <div class="hide">内容4</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="Public/footer.html" />
+
