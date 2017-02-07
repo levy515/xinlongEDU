@@ -207,101 +207,22 @@
     </div>
 
     <div class="allclass_pros">
-        <div class="pro-item">
-            <div class="pro-item-logo"><a href="http://www.jiaoyubao.cn/brand/tjyf/" target="_blank" rel="nofollow"><img src="http://img.jiaoyubao.cn/2016/05/16/CompanyNo1/584_151655_logo2.gif"></a>
-            </div>
-            <div class="pro-item-info">
-                <div class="pro-item-title"><a href="http://www.jiaoyubao.cn/brand/tjyf/" target="_blank">天津英孚少儿英语</a></div>
-                <div class="pro-item-basic">
-                    <ul>
-                        <li><i class="icon-school" title="天津英孚少儿英语的校区"></i>7个校区</li>
-                        <li><a href="http://tj.jiaoyubao.cn/edu/yf/0.html" target="_blank" title="天津英孚少儿英语的课程"><i class="icon-class" title="天津英孚少儿英语的课程"></i>22节课程</a></li>
-                        <li><a href="http://tj.jiaoyubao.cn/edu/yf/pj/" target="_blank" title="天津英孚少儿英语的真实评价"><i class="icon-rate" title="天津英孚少儿英语的真实评价"></i>37条评价</a></li>
-                    </ul>
+        <foreach name="productList" item="pros">
+            <div class="pro-item">
+                <div class="pro-item-logo">
+                    <a href="{:U('Products/ProductItem',array('id'=>$pros['id']),'')}" target="_blank"><img src="__IMG__/{$pros.pic}"></a>
                 </div>
-                <div class="pro-item-consult">2390人咨询</div>
-            </div>
-            <a href="http://tj.jiaoyubao.cn/edu/yf/" class="pro-item-go" target="_blank" rel="nofollow">直达机构主页</a>
-        </div>
-        <div class="pro-item">
-            <div class="pro-item-logo"><a href="http://jn.jiaoyubao.cn/edu/blyy/" target="_blank" rel="nofollow"><img src="http://img.jiaoyubao.cn/2011/11/29/CompanyNo1/224_163310_2.jpg"></a>
-            </div>
-            <div class="pro-item-info">
-                <div class="pro-item-title"><a href="http://jn.jiaoyubao.cn/edu/blyy/" target="_blank">济南贝乐学科英语</a></div>
-                <div class="pro-item-basic">
-                    <ul>
-                        <li><i class="icon-school" title="济南贝乐学科英语的校区"></i>4个校区</li>
-                        <li><a href="http://jn.jiaoyubao.cn/edu/blyy/0.html" target="_blank" title="济南贝乐学科英语的课程"><i class="icon-class" title="济南贝乐学科英语的课程"></i>3节课程</a></li>
-                        <li><a href="http://jn.jiaoyubao.cn/edu/blyy/pj/" target="_blank" title="济南贝乐学科英语的真实评价"><i class="icon-rate" title="济南贝乐学科英语的真实评价"></i>22条评价</a></li>
-                    </ul>
+                <div class="pro-item-info">
+                    <div class="pro-item-title">
+                        <a href="#" target="_blank">{$pros.name}</a>
+                    </div>
+                    <div class="pro-item-basic">
+                        <a href="#" target="_blank">{$pros.title}</a>
+                    </div>
                 </div>
-                <div class="pro-item-consult">1242人咨询</div>
+                <a href="http://tj.jiaoyubao.cn/edu/yf/" class="pro-item-go" target="_blank" rel="nofollow">直达机构主页</a>
             </div>
-            <a href="http://jn.jiaoyubao.cn/edu/blyy/" class="pro-item-go" target="_blank" rel="nofollow">直达机构主页</a>
-        </div>
-        <div class="pro-item">
-            <div class="pro-item-logo"><a href="http://tj.jiaoyubao.cn/edu/tjhj/" target="_blank" rel="nofollow"><img src="http://img.jiaoyubao.cn/2014/01/06/CompanyNo1/772_094959_huanjia.gif"></a>
-            </div>
-            <div class="pro-item-info">
-                <div class="pro-item-title"><a href="http://tj.jiaoyubao.cn/edu/tjhj/" target="_blank">天津皇家少儿英语培训</a></div>
-                <div class="pro-item-basic">
-                    <ul>
-                        <li><i class="icon-school" title="天津皇家少儿英语培训的校区"></i>5个校区</li>
-                        <li><a href="http://tj.jiaoyubao.cn/edu/tjhj/0.html" target="_blank" title="天津皇家少儿英语培训的课程"><i class="icon-class" title="天津皇家少儿英语培训的课程"></i>9节课程</a></li>
-                        <li><a href="http://tj.jiaoyubao.cn/edu/tjhj/pj/" target="_blank" title="天津皇家少儿英语培训的真实评价"><i class="icon-rate" title="天津皇家少儿英语培训的真实评价"></i>9条评价</a></li>
-                    </ul>
-                </div>
-                <div class="pro-item-consult">1035人咨询</div>
-            </div>
-            <a href="http://tj.jiaoyubao.cn/edu/tjhj/" class="pro-item-go" target="_blank" rel="nofollow">直达机构主页</a>
-        </div>
-        <div class="pro-item">
-            <div class="pro-item-logo"><a href="http://sjz.jiaoyubao.cn/edu/ellson/" target="_blank" rel="nofollow"><img src="http://img.jiaoyubao.cn/2016/07/15/CompanyNo1/885_095303_logo2.gif"></a>
-            </div>
-            <div class="pro-item-info">
-                <div class="pro-item-title"><a href="http://sjz.jiaoyubao.cn/edu/ellson/" target="_blank">石家庄埃森教育</a></div>
-                <div class="pro-item-basic">
-                    <ul>
-                        <li><i class="icon-school" title="石家庄埃森教育的校区"></i>9个校区</li>
-                        <li><a href="http://sjz.jiaoyubao.cn/edu/ellson/0.html" target="_blank" title="石家庄埃森教育的课程"><i class="icon-class" title="石家庄埃森教育的课程"></i>22节课程</a></li>
-                        <li><a href="http://sjz.jiaoyubao.cn/edu/ellson/pj/" target="_blank" title="石家庄埃森教育的真实评价"><i class="icon-rate" title="石家庄埃森教育的真实评价"></i>45条评价</a></li>
-                    </ul>
-                </div>
-                <div class="pro-item-consult">1075人咨询</div>
-            </div>
-            <a href="http://sjz.jiaoyubao.cn/edu/ellson/" class="pro-item-go" target="_blank" rel="nofollow">直达机构主页</a>
-        </div>
-        <div class="pro-item">
-            <div class="pro-item-logo"><a href="http://qd.jiaoyubao.cn/edu/qingdaoyameiou/" target="_blank" rel="nofollow"><img src="http://img.jiaoyubao.cn/2010/11/09/CompanyNo1/264_101814_2.gif"></a>
-            </div>
-            <div class="pro-item-info">
-                <div class="pro-item-title"><a href="http://qd.jiaoyubao.cn/edu/qingdaoyameiou/" target="_blank">青岛亚美欧英语培训学校</a></div>
-                <div class="pro-item-basic">
-                    <ul>
-                        <li><i class="icon-school" title="青岛亚美欧英语培训学校的校区"></i>1个校区</li>
-                        <li><a href="http://qd.jiaoyubao.cn/edu/qingdaoyameiou/0.html" target="_blank" title="青岛亚美欧英语培训学校的课程"><i class="icon-class" title="青岛亚美欧英语培训学校的课程"></i>19节课程</a></li>
-                    </ul>
-                </div>
-                <div class="pro-item-consult">823人咨询</div>
-            </div>
-            <a href="http://qd.jiaoyubao.cn/edu/qingdaoyameiou/" class="pro-item-go" target="_blank" rel="nofollow">直达机构主页</a>
-        </div>
-        <div class="pro-item">
-            <div class="pro-item-logo"><a href="http://sh.jiaoyubao.cn/edu/wbkxd/" target="_blank" rel="nofollow"><img src="http://img.jiaoyubao.cn/2015/02/04/CompanyNo1/462_142810_logo2.gif"></a>
-            </div>
-            <div class="pro-item-info">
-                <div class="pro-item-title"><a href="http://sh.jiaoyubao.cn/edu/wbkxd/" target="_blank">上海韦博开心豆少儿英语</a></div>
-                <div class="pro-item-basic">
-                    <ul>
-                        <li><i class="icon-school" title="上海韦博开心豆少儿英语的校区"></i>15个校区</li>
-                        <li><a href="http://sh.jiaoyubao.cn/edu/wbkxd/0.html" target="_blank" title="上海韦博开心豆少儿英语的课程"><i class="icon-class" title="上海韦博开心豆少儿英语的课程"></i>8节课程</a></li>
-                        <li><a href="http://sh.jiaoyubao.cn/edu/wbkxd/pj/" target="_blank" title="上海韦博开心豆少儿英语的真实评价"><i class="icon-rate" title="上海韦博开心豆少儿英语的真实评价"></i>4条评价</a></li>
-                    </ul>
-                </div>
-                <div class="pro-item-consult">455人咨询</div>
-            </div>
-            <a href="http://sh.jiaoyubao.cn/edu/wbkxd/" class="pro-item-go" target="_blank" rel="nofollow">直达机构主页</a>
-        </div>
+        </foreach>
     </div>
 
 </div>

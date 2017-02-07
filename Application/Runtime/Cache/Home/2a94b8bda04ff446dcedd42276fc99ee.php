@@ -97,7 +97,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="<?php echo U('Home/Index/Index');?>">首页</a></li>
-                    <li><a href="<?php echo U('Home/Allclass/Allclass');?>">课程分类</a></li>
+                    <li><a href="<?php echo U('Home/Allclass/Allclass');?>">教育分类</a></li>
                     <li><a href="<?php echo U('Home/News/News');?>">教育资讯</a></li>
                     <li><a href="<?php echo U('Home/News/News');?>">关于我们</a></li>
                     <div class="clear"></div>
@@ -122,7 +122,7 @@
         <div class="brands">
             <div class="br-nav">
                 <div class="mt">
-                    <h2>全部课程分类</h2>
+                    <h2>全部教育分类</h2>
                     <h3>中小幼教育</h3>
                 </div>
                 <div class="mc">

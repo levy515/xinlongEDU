@@ -122,7 +122,7 @@
         <div class="brands">
             <div class="br-nav">
                 <div class="mt">
-                    <h2>全部课程分类</h2>
+                    <h2>全部教育分类</h2>
                     <h3>中小幼教育</h3>
                 </div>
                 <div class="mc">
