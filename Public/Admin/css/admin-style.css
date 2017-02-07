@@ -80,9 +80,22 @@
      margin: 0;
      list-style: none;
  }
- .admin-main-right-top ol li{
-     font-size: 14px;
-     color: #777;
+.capl{
+    color: #555;
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+    margin-left: 10px;
+}
+ .capr {
+     line-height: 30px;
+     float: right;
+     margin-right: 10px;
+ }
+ .capr a {
+     display: inline-block;
+     line-height: 22px;
+     padding: 0 10px;
  }
 
 
@@ -172,4 +185,14 @@
      text-align: center;
      margin-left: 25px;
  }
+.btn-add{
+    display: inline-block;
+    border-radius: 5px;
+    width: auto;
+    height: 22px;
+    background-color: #e74649;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
 

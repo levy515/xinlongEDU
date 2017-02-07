@@ -6,9 +6,10 @@
         <include file="Public/admin-menu.html" />
         <div class="admin-main-right">
             <div class="admin-main-right-top">
-                <ol>
-                    <li>用户管理 >> 用户列表<a href="{:U('Admin/User/userAdd')}" style="float:right;color: #B81D22;">增加</a></li>
-                </ol>
+                <div class="capl">用户管理 >> 用户列表</div>
+                <div class="capr">
+                    <a class="btn-add" href="{:U('Admin/User/userAdd')}">增加</a>
+                </div>
             </div>
             <div class="admin-pan">
                 <table class="tl" id="alternatecolor">

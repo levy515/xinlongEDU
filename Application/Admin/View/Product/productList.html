@@ -1,0 +1,87 @@
+<include file="Public/admin-head.html" />
+
+<div class="admin-warp">
+    <include file="Public/admin-top.html" />
+    <div class="admin-main">
+        <include file="Public/admin-menu.html" />
+        <div class="admin-main-right">
+            <div class="admin-main-right-top">
+                <div class="capl">商品管理 >> 商品列表</div>
+                <div class="capr">
+                    <a class="btn-add" href="{:U('Admin/Product/productAdd')}">增加</a>
+                </div>
+            </div>
+            <div class="admin-pan">
+                <table class="tl">
+                    <tr>
+                        <th>ID</th>
+                        <th>一级分类</th>
+                        <th>二级分类</th>
+                        <th>品牌</th>
+                        <th>图片路径</th>
+                        <th>商品名称</th>
+                        <th>标题</th>
+                        <th>原产地</th>
+                        <th>市场价</th>
+                        <th>折扣价</th>
+                        <th>商品详情</th>
+                        <th>商品参数</th>
+                        <th>商品评论</th>
+                        <th>备注</th>
+                        <th>是否在售</th>
+                        <th>创建日期</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="productList" item="courses">
+                        <tr>
+                            <td>{$courses.id}</td>
+                            <td>{$courses.c1id}</td>
+                            <td>{$courses.c2id}</td>
+                            <td>{$courses.bid}</td>
+                            <td>{$courses.pic}</td>
+                            <td>{$courses.name}</td>
+                            <td>{$courses.title}</td>
+                            <td>{$courses.place}</td>
+                            <td>{$courses.price}</td>
+                            <td>{$courses.discount}</td>
+                            <td>{$courses.descripts}</td>
+                            <td>{$courses.params}</td>
+                            <td>{$courses.packages}</td>
+                            <td>{$courses.memo}</td>
+                            <td>
+                                <if condition="$courses.state == true ">在售
+                                    <else /> 不售
+                                </if>
+                            </td>
+                            <td>{$courses.time}</td>
+                            <td><a class="edit" href="{:U('Product/CourseClassEdit',array('id'=>$courses['id']),'')}" >编辑</a>  <a href="javascript:void(0)" id="del" onclick=del({$courses.id});>删除</a></td>
+                        </tr>
+                    </foreach>
+                </table>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<SCRIPT type=text/javascript>
+    function del(id){
+        if(confirm("你确定要删除吗？")){
+            $.ajax({
+                url: "/Admin/Product/CourseClassDel",
+                type: "get",
+                data:{"id":id},
+                dataType: "json",
+                success: function(msg){
+                    if(msg == 1)
+                    {
+                        alert("删除成功！");
+                    }else {
+                        alert("删除失败！");
+                    }
+                }
+            });
+        }
+    }
+</SCRIPT>
+

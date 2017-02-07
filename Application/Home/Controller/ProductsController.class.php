@@ -4,14 +4,14 @@ use Home\Model\ProductsModel;
 use Think\Controller;
 class ProductsController extends Controller
 {
-//    public function products()
-//    {
-//        $list = ProductsModel::ProductItem();
-//        $this->assign("productItem",$list);
-//        var_dump($list);
-//        $this->courseClassList=$list;
-//        $this->display();
-//    }
+    public function ProductList()
+    {
+        $list = ProductsModel::ProductList();
+        $this->assign("productItem",$list);
+        var_dump($list);
+        $this->courseClassList=$list;
+        $this->display();
+    }
 
     //获取单个商品
     public function ProductItem()

@@ -17,7 +17,7 @@ class ProductsModel
         return $Dao->query($sql);
     }
 
-    //商品单个
+    //单个商品
     public function ProductItem($id)
     {
         $Dao = new Model();

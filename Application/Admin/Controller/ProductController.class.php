@@ -3,7 +3,8 @@ namespace Admin\Controller;
 use Admin\Model\ProductModel;
 use Think\Controller;
 
-class ProductController extends Controller {
+class ProductController extends Controller
+{
 
     //商品管理-课程分类
     public function CourseClass()
@@ -40,6 +41,31 @@ class ProductController extends Controller {
     {
         $del = ProductModel::CourseClassDel($id);
         $this->ajaxReturn (json_encode($del),'JSON');
+    }
+
+    //商品列表
+    public function ProductList()
+    {
+        $prolist = ProductModel::ProductList();
+        $this->assign("productList",$prolist);
+        $this->productList=$prolist;
+        $this->display();
+    }
+
+    //商品列表-增加
+    public function ProductAdd()
+    {
+        $arr = ProductModel::courseClassC1();
+        $this->assign('arr',$arr);
+        $this->display();
+    }
+
+    public function select1(){
+        $select1_id=$_POST['id'];
+
+        $arr = ProductModel::courseClassC2($select1_id);
+
+        var_dump($arr);
     }
 
 }
